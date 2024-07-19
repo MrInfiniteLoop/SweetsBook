@@ -1,0 +1,10 @@
+type Query {
+  sweets: [Sweet]
+  sweetById(id: ID!): Sweet
+}
+type Sweet {
+  id: ID!
+  name: String!
+  description: String
+  image: String
+}
